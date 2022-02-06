@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>
+        TEST
+    </title>
+</head>
+
+<body>
+    <h1>Welcome</h1>
+    <p><h3>Any Question</h3></p>
+    <table border='10'>
+        <tr>
+            <th>
+                10-5
+            </th>
+            <th>
+                50+20
+            </th>
+            <th>
+                9*8
+            </th>
+        </tr>
+        <tr>
+            <td>
+                5
+            </td>
+            <td>
+                70
+            </td>
+            <td>
+                72
+            </td>
+        </tr>
+    </table>
+    <p>list</p>
+    <ol>
+        <li>
+            1
+        </li>
+        <li>
+            2
+        </li>
+        <li>
+            3
+        </li>
+    </ol>
+    <ul>
+        <li>
+            A
+        </li>
+        <li>
+            B
+        </li>
+        <li>
+            C
+        </li>
+    </ul>
+    <a href="https://google.com/" target="_blank"><button>google id</button></a>
+    <form action="webpage.html">
+        <input type = "text" placeholder="Username"/>
+        <input type = "password" placeholder="Password"/>
+        <input type = "email" placeholder="Email"/>
+        <input type = "date" placeholder="dd-mm-yy"/>
+        <input type = "number" placeholder="Mobile number"/>
+        <input type = "submit" value = "Submit">
+    </form>
+    <img src = "https://im.whatshot.in/img/2020/Oct/plus-valley-1440x648-1603420742.jpg" height="300" width="400">
+    <video width = "500" height = "400" controls>
+        <source src = "video.mp4" type = "video/mp4">
+    </video>
+    <audio controls>
+        <source src = "audio.mp3" type = "audio/mp3">
+    </audio>
+
+</body>
+
+</html>
