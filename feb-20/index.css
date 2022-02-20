@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(70,170,255);
+    text-align: center;
+    margin: 0px;
+}
+.text1{
+    background-color: rgb(155,255,154);
+    margin: 20px 50px 0px 50px;
+    padding: 5px;    
+}
+.text2{
+    background-color: rgb(254,241,2);
+    margin: 10px 180px 10px 180px;
+    padding: 3px;
+}
+.text3{
+    background-color: rgb(255,244,0);
+    margin: 15px 100px 0px 100px;
+    padding: 3px;
+}
+.text4{
+    background-color: rgb(255,244,0);
+    margin: 10px 500px 10px 500px;
+}
+.wrapper{
+    background-color: rgb(155,255,154);
+    text-align: center;
+    margin: 4vh;
+}
+.container1{
+    background-color: rgb(240,239,255);
+    text-align: center;
+    margin: 4vh;
+}
+.header{
+    background-color: rgb(255,244,0);
+    text-align: center;
+    margin: 4vh;
+}
+.navigation{
+    background-color: rgb(238,204,255);
+    text-align: center;
+    margin: 4vh;
+}
+.container2{
+    background-color: rgb(255,244,0);
+    display: inline-block;
+    text-align: center;
+    margin: 4vh;
+}
+.content{
+    background-color: rgb(238,238,238);
+    text-align: center;
+    margin: 4vh;
+    padding: 2vh;
+    float: left;
+}
+.float-right{
+    background-color: rgb(238,238,238);
+    float: right;
+    margin: 4vh;
+    padding: 2vh;
+    text-align: center;
+}
+.footer{
+    background-color: rgb(255,244,0);
+    text-align: center;
+    margin: 4vh;
+}
+h2{
+    background-color: rgb(255,244,0);
+    padding: 1vh 5vh 1vh 6vh;
+    margin: 5vh;
+}
