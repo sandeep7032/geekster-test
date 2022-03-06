@@ -1,0 +1,415 @@
+<html>
+<head>
+    <title>Brand-Model for Mobile</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+    <header class="equal-left-padding">
+        <h1 style="color: rgb(29, 27, 27); text-align: center;">Top Brands in India</h1>
+    </header>
+    <section class="equal-left-padding">
+        <div class="brand-list">
+            <div class="brand-name">
+                <div>
+                    <img src="https://cdn.wallpapersafari.com/85/88/qoCNXr.jpg"/>
+                </div>
+                <button onclick="show_productDetails('samsung');">View More</button>
+            </div>
+            <div class="brand-name">
+                <div>
+                    <img src="http://incitrio.com/wp-content/uploads/2015/01/Apple_gray_logo.png"/>
+                </div>
+                <button onclick="show_productDetails('iphone');">View More</button>
+            </div>
+            <div class="brand-name">
+                <div>
+                    <img src="data:image/png;base64,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"/>
+                </div>
+                <button onclick="show_productDetails('oneplus');">View More</button>
+            </div>
+            <div class="brand-name">
+                <div>
+                    <img src="data:image/png;base64,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"/>
+                </div>
+                <button onclick="show_productDetails('asus');">View More</button>
+            </div>
+            <div class="brand-name">
+                <div>
+                    <img src="https://i0.wp.com/logotaglines.com/wp-content/uploads/2017/08/Xiaomi-logo.jpg?fit=1085%2C765&ssl=1"/>
+                </div>
+                <button onclick="show_productDetails('mi');">View More</button>
+            </div>
+            
+            
+        </div>
+        <div id="samsung" class=" hide ">
+            <div >
+                <div class="product-image inline">
+                    <img src="https://www.gizbot.com/imgh/600x400/2019/02/samsung-galaxy-s10-plus_155107488940.jpg" />
+                </div>
+                <div class="inline">
+                    <p class="minus-top-padding color-text"> SAMSUNG S10 plus</p>
+                    <p class="minus-top-padding  small-text">2456 Rating and 2000 Reviews</p>
+                    <p class="medium-text">12 GB RAM | 1 TB ROM | Expandable Upto 512 GB</p>
+                    <p class="medium-text minus-top-padding">16.26 cm (6.4 inch) Quad HD+ Display</p>
+                    <p class="medium-text minus-top-padding">16MP + 12MP | 10MP + 8MP Dual Front Camera</p>
+                    <p class="medium-text minus-top-padding">1 Year warranty on handset and charger</p>
+                    <p class="medium-text minus-top-padding">4100 mAh Lithium-ion Battery</p>
+                    <p class="medium-text minus-top-padding">Snapdragon 1024 processor</p>
+                    <p class="medium-text minus-top-padding">Super amoled Display</p>
+                    <p class="medium-text minus-top-padding">Clock speed 3.5 ghz</p>
+                    <p class="medium-text minus-top-padding">Touch pen supported</p>
+                    <p class="medium-text minus-top-padding">Slow motion 3d capture supported</p>
+                </div>
+                <div class="inline transfrom-top">
+                    <p class="red-text">Price &#x20b9; 95000 </p>
+                    <span class="small-text cross">Price &#x20b9; 125000</span>
+                    <span class="color-text medium-text">20% offer</span>
+                    <p class="small-text">Free delivery</p>
+                    <p class="medium-text">Upto &#x20b9; 10000</p>
+                </div>
+                <div class="inline close-button">
+                    <button onclick="close_productList('samsung')" >❌</button>
+                </div>
+            </div>
+            <div >
+                <div class="product-image inline">
+                    <img src="https://www.gizbot.com/imgh/600x400/2019/02/samsung-galaxy-s10-plus_155107488940.jpg" />
+                </div>
+                <div class="inline">
+                    <p class="minus-top-padding color-text"> SAMSUNG S6 plus</p>
+                    <p class="minus-top-padding  small-text">2456 Rating and 2000 Reviews</p>
+                    <p class="medium-text">12 GB RAM | 1 TB ROM | Expandable Upto 512 GB</p>
+                    <p class="medium-text minus-top-padding">16.26 cm (6.4 inch) Quad HD+ Display</p>
+                    <p class="medium-text minus-top-padding">16MP + 12MP | 10MP + 8MP Dual Front Camera</p>
+                    <p class="medium-text minus-top-padding">1 Year warranty on handset and charger</p>
+                    <p class="medium-text minus-top-padding">4100 mAh Lithium-ion Battery</p>
+                    <p class="medium-text minus-top-padding">Snapdragon 1024 processor</p>
+                    <p class="medium-text minus-top-padding">Super amoled Display</p>
+                    <p class="medium-text minus-top-padding">Clock speed 3.5 ghz</p>
+                    <p class="medium-text minus-top-padding">Touch pen supported</p>
+                    <p class="medium-text minus-top-padding">Slow motion 3d capture supported</p>
+                </div>
+                <div class="inline transfrom-top">
+                    <p class="red-text">Price &#x20b9; 95000 </p>
+                    <span class="small-text cross">Price &#x20b9; 125000</span>
+                    <span class="color-text medium-text">20% offer</span>
+                    <p class="small-text">Free delivery</p>
+                    <p class="medium-text">Upto &#x20b9; 10000</p>
+                </div>
+            </div>
+            <div >
+                <div class="product-image inline">
+                    <img src="https://www.gizbot.com/imgh/600x400/2019/02/samsung-galaxy-s10-plus_155107488940.jpg" />
+                </div>
+                <div class="inline">
+                    <p class="minus-top-padding color-text"> SAMSUNG S11 plus</p>
+                    <p class="minus-top-padding  small-text">2456 Rating and 2000 Reviews</p>
+                    <p class="medium-text">12 GB RAM | 1 TB ROM | Expandable Upto 512 GB</p>
+                    <p class="medium-text minus-top-padding">16.26 cm (6.4 inch) Quad HD+ Display</p>
+                    <p class="medium-text minus-top-padding">16MP + 12MP | 10MP + 8MP Dual Front Camera</p>
+                    <p class="medium-text minus-top-padding">1 Year warranty on handset and charger</p>
+                    <p class="medium-text minus-top-padding">4100 mAh Lithium-ion Battery</p>
+                    <p class="medium-text minus-top-padding">Snapdragon 1024 processor</p>
+                    <p class="medium-text minus-top-padding">Super amoled Display</p>
+                    <p class="medium-text minus-top-padding">Clock speed 3.5 ghz</p>
+                    <p class="medium-text minus-top-padding">Touch pen supported</p>
+                    <p class="medium-text minus-top-padding">Slow motion 3d capture supported</p>
+                </div>
+                <div class="inline transfrom-top">
+                    <p class="red-text">Price &#x20b9; 95000 </p>
+                    <span class="small-text cross">Price &#x20b9; 125000</span>
+                    <span class="color-text medium-text">20% offer</span>
+                    <p class="small-text">Free delivery</p>
+                    <p class="medium-text">Upto &#x20b9; 10000</p>
+                </div>
+            </div>
+            <div >
+                <div class="product-image inline">
+                    <img src="https://www.gizbot.com/imgh/600x400/2019/02/samsung-galaxy-s10-plus_155107488940.jpg" />
+                </div>
+                <div class="inline">
+                    <p class="minus-top-padding color-text"> SAMSUNG S9 plus</p>
+                    <p class="minus-top-padding  small-text">2456 Rating and 2000 Reviews</p>
+                    <p class="medium-text">12 GB RAM | 1 TB ROM | Expandable Upto 512 GB</p>
+                    <p class="medium-text minus-top-padding">16.26 cm (6.4 inch) Quad HD+ Display</p>
+                    <p class="medium-text minus-top-padding">16MP + 12MP | 10MP + 8MP Dual Front Camera</p>
+                    <p class="medium-text minus-top-padding">1 Year warranty on handset and charger</p>
+                    <p class="medium-text minus-top-padding">4100 mAh Lithium-ion Battery</p>
+                    <p class="medium-text minus-top-padding">Snapdragon 1024 processor</p>
+                    <p class="medium-text minus-top-padding">Super amoled Display</p>
+                    <p class="medium-text minus-top-padding">Clock speed 3.5 ghz</p>
+                    <p class="medium-text minus-top-padding">Touch pen supported</p>
+                    <p class="medium-text minus-top-padding">Slow motion 3d capture supported</p>
+                </div>
+                <div class="inline transfrom-top">
+                    <p class="red-text">Price &#x20b9; 95000 </p>
+                    <span class="small-text cross">Price &#x20b9; 125000</span>
+                    <span class="color-text medium-text">20% offer</span>
+                    <p class="small-text">Free delivery</p>
+                    <p class="medium-text">Upto &#x20b9; 10000</p>
+                </div>
+            </div>
+        </div>
+
+
+         <div  id="iphone"  class="hide">
+            <div >
+                <div class="product-image inline">
+                    <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-2.jpg" />
+                </div>
+                <div class="inline">
+                    <p class="minus-top-padding color-text">Iphone 12 Pro</p>
+                    <p class="minus-top-padding  small-text">2456 Rating and 2000 Reviews</p>
+                    <p class="medium-text">12 GB RAM | 1 TB ROM | Expandable Upto 512 GB</p>
+                    <p class="medium-text minus-top-padding">16.26 cm (6.4 inch) Quad HD+ Display</p>
+                    <p class="medium-text minus-top-padding">16MP + 12MP | 10MP + 8MP Dual Front Camera</p>
+                    <p class="medium-text minus-top-padding">1 Year warranty on handset and charger</p>
+                    <p class="medium-text minus-top-padding">4100 mAh Lithium-ion Battery</p>
+                    <p class="medium-text minus-top-padding">Snapdragon 1024 processor</p>
+                    <p class="medium-text minus-top-padding">Super amoled Display</p>
+                    <p class="medium-text minus-top-padding">Clock speed 3.5 ghz</p>
+                    <p class="medium-text minus-top-padding">Touch pen supported</p>
+                    <p class="medium-text minus-top-padding">Slow motion 3d capture supported</p>
+                </div>
+                <div class="inline transfrom-top">
+                    <p class="red-text">Price &#x20b9; 90000 </p>
+                    <span class="small-text cross">Price &#x20b9; 125000</span>
+                    <span class="color-text medium-text">20% offer</span>
+                    <p class="small-text">Free delivery</p>
+                    <p class="medium-text">Upto &#x20b9; 10000</p>
+                </div>
+                <div class="inline close-button">
+                    <button onclick="close_productList('iphone')" >❌</button>
+                </div>
+            </div>
+            <div >
+                <div class="product-image inline">
+                    <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-2.jpg" />
+                </div>
+                <div class="inline">
+                    <p class="minus-top-padding color-text">Iphone 12</p>
+                    <p class="minus-top-padding  small-text">2456 Rating and 2000 Reviews</p>
+                    <p class="medium-text">12 GB RAM | 1 TB ROM | Expandable Upto 512 GB</p>
+                    <p class="medium-text minus-top-padding">16.26 cm (6.4 inch) Quad HD+ Display</p>
+                    <p class="medium-text minus-top-padding">16MP + 12MP | 10MP + 8MP Dual Front Camera</p>
+                    <p class="medium-text minus-top-padding">1 Year warranty on handset and charger</p>
+                    <p class="medium-text minus-top-padding">4100 mAh Lithium-ion Battery</p>
+                    <p class="medium-text minus-top-padding">Snapdragon 1024 processor</p>
+                    <p class="medium-text minus-top-padding">Super amoled Display</p>
+                    <p class="medium-text minus-top-padding">Clock speed 3.5 ghz</p>
+                    <p class="medium-text minus-top-padding">Touch pen supported</p>
+                    <p class="medium-text minus-top-padding">Slow motion 3d capture supported</p>
+                </div>
+                <div class="inline transfrom-top">
+                    <p class="red-text">Price &#x20b9; 95000 </p>
+                    <span class="small-text cross">Price &#x20b9; 125000</span>
+                    <span class="color-text medium-text">20% offer</span>
+                    <p class="small-text">Free delivery</p>
+                    <p class="medium-text">Upto &#x20b9; 10000</p>
+                </div>
+            </div>
+            <div >
+                <div class="product-image inline">
+                    <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-2.jpg" />
+                </div>
+                <div class="inline">
+                    <p class="minus-top-padding color-text">Iphone 11 pro </p>
+                    <p class="minus-top-padding  small-text">2456 Rating and 2000 Reviews</p>
+                    <p class="medium-text">12 GB RAM | 1 TB ROM | Expandable Upto 512 GB</p>
+                    <p class="medium-text minus-top-padding">16.26 cm (6.4 inch) Quad HD+ Display</p>
+                    <p class="medium-text minus-top-padding">16MP + 12MP | 10MP + 8MP Dual Front Camera</p>
+                    <p class="medium-text minus-top-padding">1 Year warranty on handset and charger</p>
+                    <p class="medium-text minus-top-padding">4100 mAh Lithium-ion Battery</p>
+                    <p class="medium-text minus-top-padding">Snapdragon 1024 processor</p>
+                    <p class="medium-text minus-top-padding">Super amoled Display</p>
+                    <p class="medium-text minus-top-padding">Clock speed 3.5 ghz</p>
+                    <p class="medium-text minus-top-padding">Touch pen supported</p>
+                    <p class="medium-text minus-top-padding">Slow motion 3d capture supported</p>
+                </div>
+                <div class="inline transfrom-top">
+                    <p class="red-text">Price &#x20b9; 95000 </p>
+                    <span class="small-text cross">Price &#x20b9; 125000</span>
+                    <span class="color-text medium-text">20% offer</span>
+                    <p class="small-text">Free delivery</p>
+                    <p class="medium-text">Upto &#x20b9; 10000</p>
+                </div>
+            </div>
+            <div >
+                <div class="product-image inline">
+                    <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-2.jpg" />
+                </div>
+                <div class="inline">
+                    <p class="minus-top-padding color-text">Iphone10 Pro</p>
+                    <p class="minus-top-padding  small-text">2456 Rating and 2000 Reviews</p>
+                    <p class="medium-text">12 GB RAM | 1 TB ROM | Expandable Upto 512 GB</p>
+                    <p class="medium-text minus-top-padding">16.26 cm (6.4 inch) Quad HD+ Display</p>
+                    <p class="medium-text minus-top-padding">16MP + 12MP | 10MP + 8MP Dual Front Camera</p>
+                    <p class="medium-text minus-top-padding">1 Year warranty on handset and charger</p>
+                    <p class="medium-text minus-top-padding">4100 mAh Lithium-ion Battery</p>
+                    <p class="medium-text minus-top-padding">Snapdragon 1024 processor</p>
+                    <p class="medium-text minus-top-padding">Super amoled Display</p>
+                    <p class="medium-text minus-top-padding">Clock speed 3.5 ghz</p>
+                    <p class="medium-text minus-top-padding">Touch pen supported</p>
+                    <p class="medium-text minus-top-padding">Slow motion 3d capture supported</p>
+                </div>
+                <div class="inline transfrom-top">
+                    <p class="red-text">Price &#x20b9; 95000 </p>
+                    <span class="small-text cross">Price &#x20b9; 125000</span>
+                    <span class="color-text medium-text">20% offer</span>
+                    <p class="small-text">Free delivery</p>
+                    <p class="medium-text">Upto &#x20b9; 10000</p>
+                </div>
+            </div>
+            <div >
+                <div class="product-image inline">
+                    <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-2.jpg" />
+                </div>
+                <div class="inline">
+                    <p class="minus-top-padding color-text">Iphone 9plus</p>
+                    <p class="minus-top-padding  small-text">2456 Rating and 2000 Reviews</p>
+                    <p class="medium-text">12 GB RAM | 1 TB ROM | Expandable Upto 512 GB</p>
+                    <p class="medium-text minus-top-padding">16.26 cm (6.4 inch) Quad HD+ Display</p>
+                    <p class="medium-text minus-top-padding">16MP + 12MP | 10MP + 8MP Dual Front Camera</p>
+                    <p class="medium-text minus-top-padding">1 Year warranty on handset and charger</p>
+                    <p class="medium-text minus-top-padding">4100 mAh Lithium-ion Battery</p>
+                    <p class="medium-text minus-top-padding">Snapdragon 1024 processor</p>
+                    <p class="medium-text minus-top-padding">Super amoled Display</p>
+                    <p class="medium-text minus-top-padding">Clock speed 3.5 ghz</p>
+                    <p class="medium-text minus-top-padding">Touch pen supported</p>
+                    <p class="medium-text minus-top-padding">Slow motion 3d capture supported</p>
+                </div>
+                <div class="inline transfrom-top">
+                    <p class="red-text">Price &#x20b9; 95000 </p>
+                    <span class="small-text cross">Price &#x20b9; 125000</span>
+                    <span class="color-text medium-text">20% offer</span>
+                    <p class="small-text">Free delivery</p>
+                    <p class="medium-text">Upto &#x20b9; 10000</p>
+                </div>
+            </div>
+            <div >
+                <div class="product-image inline">
+                    <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-2.jpg" />
+                </div>
+                <div class="inline">
+                    <p class="minus-top-padding color-text">Iphone 8S</p>
+                    <p class="minus-top-padding  small-text">2456 Rating and 2000 Reviews</p>
+                    <p class="medium-text">12 GB RAM | 1 TB ROM | Expandable Upto 512 GB</p>
+                    <p class="medium-text minus-top-padding">16.26 cm (6.4 inch) Quad HD+ Display</p>
+                    <p class="medium-text minus-top-padding">16MP + 12MP | 10MP + 8MP Dual Front Camera</p>
+                    <p class="medium-text minus-top-padding">1 Year warranty on handset and charger</p>
+                    <p class="medium-text minus-top-padding">4100 mAh Lithium-ion Battery</p>
+                    <p class="medium-text minus-top-padding">Snapdragon 1024 processor</p>
+                    <p class="medium-text minus-top-padding">Super amoled Display</p>
+                    <p class="medium-text minus-top-padding">Clock speed 3.5 ghz</p>
+                    <p class="medium-text minus-top-padding">Touch pen supported</p>
+                    <p class="medium-text minus-top-padding">Slow motion 3d capture supported</p>
+                </div>
+                <div class="inline transfrom-top">
+                    <p class="red-text">Price &#x20b9; 95000 </p>
+                    <span class="small-text cross">Price &#x20b9; 125000</span>
+                    <span class="color-text medium-text">20% offer</span>
+                    <p class="small-text">Free delivery</p>
+                    <p class="medium-text">Upto &#x20b9; 10000</p>
+                </div>
+            </div>
+        </div> 
+        <div id="oneplus" class=" hide ">
+            <div >
+                <div class="product-image inline">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBISERARDxISERISEhESEQ8REhERERERGBQZGRkVGBgcITAlHB4rHxgYJzgmKzExNjU1GiQ7QDszQy40NTEBDAwMEA8QHhISHzQhISE0NDQ0NDY0NDQ0MTQxOjE0NDQ0NDQ0MTQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ9NP/AABEIAKIBNgMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAYCAwUBB//EAEUQAAIBAgMCCQcHDAIDAAAAAAABAgMRBBIhBTEGE0FRcXKRsbIiMjNhc4GzFBUkUlNikgcjJTVCVZOhwcPR0kXxF4Lh/8QAGwEBAAIDAQEAAAAAAAAAAAAAAAUGAQMEAgf/xAA9EQEAAQEDCAMOBQUBAAAAAAAAAQIDBBEFEiExMnGxwVFygQYTFSIzQUNSYYKRoeHiFlOiwvAjNEKS8RT/2gAMAwEAAhEDEQA/AL0ACnuwAAAAAAAAAAAAMxM4ADDjI/Wj2ocbH60fxIyMwYcbD60fxIcbH60fxIDMGHGx+tHtR7nj9ZdqAyAAAGM5pec0r7rtK5kMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGz5jwm2zVeInGM3FRUeZ2vyK+5dG8+mT3PofcfIuEiti63RDwon8hUxnWleGmM2I9mOdj8cIcd7nZjzaeSKto1VdqbTbvJpRV3a13prol2HvznW+0fYiDczhG923aK3yfJ/llhz56XJmx0JfzlV+0fYh851vtH2I58q63Qg5ettt9iNfyuN7Si4etXdulPU19/jpeu9T0Op85VvtH2I8+cqt82fVJpStG6T5L23aLsId/fzNcqPLmzOnpec2Ohd+A+1qkqs6VSTkmk1ycttUtL+veX8+YcAl9Kk/uLxn08rGXaaabWmqI0zE4+3CXZdJ0THmiXzva+zYYzaThiMzhTjVkkpNaQmoxin+yvLT0trH1nSjsWdNfQ8XXoaJRpycatJW5crs372zTTdtp1L/Z1/i0juudizWFhZ12MU1UxMavgjra1rpr8WcHNjtDalHzqeHxkEt9OTo1X0p+T2HmE/KBhJScMRGrhpxk4yjUjdRkt8dNdOg6imcnEbBw1TELEzp5prkk7wckrKbjuckklf1LmOO3yJdq9NEZu6f8AsfJts79XG1pWXA7ToV1ehWpVPVCcXJdMd6JZUcRwbwdR5pUYwle+elelO/PeNr+8zjs/F4eOfC4udRR1+T4tKpCUV+ypxs49NmRdtkC1p8nVFW/Q6qL9RO1GC1g0YHFKrSp1VFxzwjPJK2aDa1i7cqenuN5ATExOE+Z2gAAAAAAAAAAAAAAAAAAAAAAAAAAAADGe59D7j5Nwqh9Lq9WHcj6zPc+h9x8t4Vw+l1OpT8KLBkHVa+7+5w3zXT28leymvEt2jFbrZn0v/wCL+ZKykDaLcXFrc1b3rk7O4mrbHNabPTUjqcrtR39pGqybeurJGzsLWxFWNHDU5Vas75YRteyV27vRK3KyFi4zp1JwqRcKkJyhOErqUZxdnF+tNHK6HS2dJ2nCW+LvZ70no12om5SHsaEmpzl+1aKb5Uv+zo5TrsscyMXNaT40rHwDi/lE2km8tPe7acYr/wArn00+dcA4fn6j+5D4h9FK/l7as908XTc/8t/JQqcHHada8nO8cQ02oqydSlaKslou07aOP/yVXqVvHSOykWu6+ShG2+2zQgexR7Fao3TLUkU4m2q8sb2MYNe4yxL8h7t3KascZh68zbsv0MOh97JRD2U/zFPq/wBSYfPrz5e061XGU/RsxujgAA0vQAAAAAAAAAAAAAAAAAAAAAAAAAAMK0bwmueMlfpR824VU/pM+pT8J9KnufQ+4+fcJ4fSJ9Sn4Sw5AnRax1f3OC+66e3krWUxrYdTi4yV0ybxZ5xZYMHHnYOJhMNicLVjXwlV06kL5ai85JqzXM1bnRq+aalSpOriJuUpzlOcv2pTk7ttvnbLBxZ66TVm1ZNXT51dq696a9xr7xRre+/1akSFNJKMUkkrJLcke5SVxZ5xZswa8Vh4DxtVqdSHxC+lI4IxyyqNfVp/ERdytd0EYVWe6ri77jpireo8F+kqvUreOidmMTj0F+kavs6vjpFl2fRU6kIS82U0nbTRlosJwsvijrXTaYdODRGJonJplkWzKMoqUZVI+ZeMlGVnJtZeTlRoxfB+TuoVIN3tZ5ou+XNbs1Mxb0Y6ZJsa+jFxY1FdJPS+qGJq+T3GM9jYuPlRpucXulTlCon0ZXchynmWu9bjoiImcYnFrqiY1xg7+yfQUuqTCHsn0FLqkw+c3ry9p1quMrBRsRujgAA0PQAAAAAAAAAAAAAAAAAAAAAAAAAAManmy6r7ikcJIXrS6lPwl3mvJl0PuKjwgp/nJdSn4Sx9z86LSN3NHX/RNPareQZCXkGQsWDgxS9kKSSyuSjx0eMyOaeTK/q69HrNG0o1MmHhVlOTjTm1Gd/JvVmtE9dUlvNfFjizzmacXqa9GCJkGQl5BkPWDzi7PBuFuMf3aXxEXArXB+lrNPlhT+IiylX7oZ8aiPZVySWT9VU+2FJwq/SNbqVfFSLRsxPjqdrJ542bV1v5Ss4SN9o1/VTq+KiWLBVlTqQnJO0ZKTSte3quWay02U4e3mj7Sf6kdnJZ8sZRStFZ8trNxlLJZRtCcWubf6jbdSbmlJ3g4XjlnG/P5L32ZCw2NpXptTlHJmvFwlFWk47lF2W7dqteQkRqUJZbzpNqrOflWTtJyfLy6rsOOaZjXE/z+Q7IqpnVLTUcb0HOag6TafGZoN3lF3UpxVtIvp3ctygNavpfefSITk3S85xU5qTUnJO8llbyN6Wvv057HzmW99L7ztuU6+zm571qjt5LFsn0FPqkwh7J9BT6CYUK9eXtOtVxlMUbEboAAaHoAAAAAAAAAAAAAAAAAAAAAAAAAAGNTc+h9xW9uU7zl1KfhLJPc+h9xxNrQvKfVpeFFi7n/Se7zRuUdVPbyV7IecWS+LHFllRqJkGQl8WOLAicWOLJfFnvFgdrYkLN9SHxEdk5+y4WT9lDxo6BVO6Dbo3TyS2Ttid6qbIp5toYv1U5v+dE69eGUg8Hf1nilz05d9I7W06Wrkufd6ix3evTmuG3o0RV7GigxUV1I10J20ZnUWjOiY0tManLrxyu8HrzpkNEytQlzEWUbPU6aXhYtkegp9H9SYQ9kegp9H9SYfNr1/cWnWq4ysdGxG6AAGh6AAAAAAAAAAAAAAAAAAAAAAAAAABjPc+h9xzNpQ1qdWl4UdOe59D7iFj4+f1afgRYe5/0nu80blHVT2uHkGQkZT3KWVFo2QcWSMp7lAjZBkJOU8ygdnARspeyh8SJKNWEWkvZR+IjaVTL+3Tunkmcn7Eq5we/WeKa5Kb/ALRbsTh86uiocH/1li/Z/wBaJe6a0JuKs2qWrMiqiMehV68MslfemZp3Je1aTu3yW0IUabsmSFNWdTEy4KommZhnGC7dCBjML5SfI9PeT1ck0ZxfndrM5006WMMdDRspWowXMmv5slkfBWyK27NK3RnZIPn968vadarjKwUbEbo4AAND0AAAAAAAAAAAAAAAAAAAAAAAAAADGe59D7iNjVrPop+BEme59D7jRjFrU6KXgRYMgek93mjso6qe1zcoymR5YsiLeZRlPbCwHmUZT2wsB1sNy+yj8RGw10OX2UfiI2FVy/t07pTNw2Z/nSr3BuN9pY32S/tF1oT1yv3FN4Kr9JY32Mf7Rbpwa1WliWrnCuSzjGzjcw2nhXKN1yakChh21bW52Kda/kz95upwitxvovGFODRXd8asXCnh5PRI9hs2fLodxqEXczp1FIzN6mNTH/midMqzgo2hbmlUXZNm81UN0/aVviSNpTbxONtX1p4pKjZgABpegAAAAAAAAAAAAAAAAAAAAAAAAAAYz3PofcacXvqdFPwI3VH5Muh9xpxLvnfPGk9dH6NFgyD6T3eaOyhqp7XPsLHoLIjGSm/V2HkpNrXt5TywsYwhnGXlhY9sDLDqUOX2UfiIzNUJ2u3f0cFom99WCW7pNpVcv7dO6eKYuGxLh8EVfaWN9hDvpF0nTKVwJqRntHGSi7p0Yq9mtU6ae/1pl7kiWtNud7FnsRuhz60be7czGFZ33+omVIJkOpRPDbEtk8Qra6mEauvkkdxZ5F2vyGYgmETCu8W/v1fiSN5HwXmf+9T4kiQVa8eWr608Zb6dUAANTIAAAAAAAAAAAAAAAAAAAAAAAAAADRz8Vi1FyVSM1eMFnUXKEnFWumudcnIdAHbcr9VdKpmIzonXGrVq0tFvYRbRETOGCv8Ay+nzy/BIfOFPnl+Cf+CwXFyT/EE/lfq+1y+Do9b5fVX/AJxp88vwT/weS2lSSbcpJJXbySskuXcWG4uPxBP5X6vtZ8HR63y+qvx2jTaTTk09U1Ceq7DJY2H3/wAE/wDB3ri48Pz+VH+32seDo9b5fVBwmKc5yywmoZYrPOLimk81lzu6ROAIm+3uq9151UYREYREOywsosqcI0qDtfbGJ2Tj/lNOhKvRq05QnHylGXm5bTUXlksieqfnNW5Sb/5fj+7q/wDFj/oXExyLmXYju8LRMeNRp8+E/R4iwmmMIn5Ke/yuL921v4sf9DF/lZX7trfxY/6FyyR5l2I9yLmXYjPhan1J+P2s96npUl/lUT/4yt/Fj/oa5/lJnUajR2XXc27Rjxl7v3U7l6yrmR6eZyrHms/1fR6iznpQtjwqRw9FV0lVcVKrGO6M5eVJLobZNAIqqqaqpqnXM4/FsiMAAHlkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAABkAAAAAAAAAAAAAAAAAAB/9k=" />
+                </div>
+                <div class="inline">
+                    <p class="minus-top-padding color-text"> Oneplus 10 pro</p>
+                    <p class="minus-top-padding  small-text">2456 Rating and 2000 Reviews</p>
+                    <p class="medium-text">12 GB RAM | 1 TB ROM | Expandable Upto 512 GB</p>
+                    <p class="medium-text minus-top-padding">16.26 cm (6.4 inch) Quad HD+ Display</p>
+                    <p class="medium-text minus-top-padding">16MP + 12MP | 10MP + 8MP Dual Front Camera</p>
+                    <p class="medium-text minus-top-padding">1 Year warranty on handset and charger</p>
+                    <p class="medium-text minus-top-padding">4100 mAh Lithium-ion Battery</p>
+                    <p class="medium-text minus-top-padding">Snapdragon 1024 processor</p>
+                    <p class="medium-text minus-top-padding">Super amoled Display</p>
+                    <p class="medium-text minus-top-padding">Clock speed 3.5 ghz</p>
+                    <p class="medium-text minus-top-padding">Touch pen supported</p>
+                    <p class="medium-text minus-top-padding">Slow motion 3d capture supported</p>
+                </div>
+                <div class="inline transfrom-top">
+                    <p class="red-text">Price &#x20b9; 95000 </p>
+                    <span class="small-text cross">Price &#x20b9; 125000</span>
+                    <span class="color-text medium-text">20% offer</span>
+                    <p class="small-text">Free delivery</p>
+                    <p class="medium-text">Upto &#x20b9; 10000</p>
+                </div>
+                <div class="inline close-button">
+                    <button onclick="close_productList('oneplus')" >❌</button>
+                </div>
+            </div>
+            </div>
+
+            <div id="asus" class=" hide ">
+                <div >
+                    <div class="product-image inline">
+                        <img src="data:image/jpeg;base64,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" />
+                    </div>
+                    <div class="inline">
+                        <p class="minus-top-padding color-text"> Asus Rock pro</p>
+                        <p class="minus-top-padding  small-text">2456 Rating and 2000 Reviews</p>
+                        <p class="medium-text">12 GB RAM | 1 TB ROM | Expandable Upto 512 GB</p>
+                        <p class="medium-text minus-top-padding">16.26 cm (6.4 inch) Quad HD+ Display</p>
+                        <p class="medium-text minus-top-padding">16MP + 12MP | 10MP + 8MP Dual Front Camera</p>
+                        <p class="medium-text minus-top-padding">1 Year warranty on handset and charger</p>
+                        <p class="medium-text minus-top-padding">4100 mAh Lithium-ion Battery</p>
+                        <p class="medium-text minus-top-padding">Snapdragon 1024 processor</p>
+                        <p class="medium-text minus-top-padding">Super amoled Display</p>
+                        <p class="medium-text minus-top-padding">Clock speed 3.5 ghz</p>
+                        <p class="medium-text minus-top-padding">Touch pen supported</p>
+                        <p class="medium-text minus-top-padding">Slow motion 3d capture supported</p>
+                    </div>
+                    <div class="inline transfrom-top">
+                        <p class="red-text">Price &#x20b9; 95000 </p>
+                        <span class="small-text cross">Price &#x20b9; 125000</span>
+                        <span class="color-text medium-text">20% offer</span>
+                        <p class="small-text">Free delivery</p>
+                        <p class="medium-text">Upto &#x20b9; 10000</p>
+                    </div>
+                    <div class="inline close-button">
+                        <button onclick="close_productList('asus')" >❌</button>
+                    </div>
+                </div>
+                </div>
+                <div id="mi" class=" hide ">
+                    <div >
+                        <div class="product-image inline">
+                            <img src="https://i02.appmifile.com/56_operator_in/30/11/2021/203f35a3ff6b763d5f01d2782f01f4dd.jpg" />
+                        </div>
+                        <div class="inline">
+                            <p class="minus-top-padding color-text"> Redmi 13 pro</p>
+                            <p class="minus-top-padding  small-text">2456 Rating and 2000 Reviews</p>
+                            <p class="medium-text">12 GB RAM | 1 TB ROM | Expandable Upto 512 GB</p>
+                            <p class="medium-text minus-top-padding">16.26 cm (6.4 inch) Quad HD+ Display</p>
+                            <p class="medium-text minus-top-padding">16MP + 12MP | 10MP + 8MP Dual Front Camera</p>
+                            <p class="medium-text minus-top-padding">1 Year warranty on handset and charger</p>
+                            <p class="medium-text minus-top-padding">4100 mAh Lithium-ion Battery</p>
+                            <p class="medium-text minus-top-padding">Snapdragon 1024 processor</p>
+                            <p class="medium-text minus-top-padding">Super amoled Display</p>
+                            <p class="medium-text minus-top-padding">Clock speed 3.5 ghz</p>
+                            <p class="medium-text minus-top-padding">Touch pen supported</p>
+                            <p class="medium-text minus-top-padding">Slow motion 3d capture supported</p>
+                        </div>
+                        <div class="inline transfrom-top">
+                            <p class="red-text">Price &#x20b9; 95000 </p>
+                            <span class="small-text cross">Price &#x20b9; 125000</span>
+                            <span class="color-text medium-text">20% offer</span>
+                            <p class="small-text">Free delivery</p>
+                            <p class="medium-text">Upto &#x20b9; 10000</p>
+                        </div>
+                        <div class="inline close-button">
+                            <button onclick="close_productList('mi')" >❌</button>
+                        </div>
+                    </div>
+                    </div>
+
+    </section>
+   <script src="./index.js"></script> 
+</body>
+</html>
